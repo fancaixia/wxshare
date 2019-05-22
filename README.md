@@ -1,5 +1,5 @@
 ### wxshare  微信小程序转发动态消息实例
-
+[github地址：https://github.com/fancaixia/wxshare](https://github.com/fancaixia/wxshare)  <br/><br/>
 ![https://github.com/fancaixia/wxshare/blob/master/img/001.jpg](https://github.com/fancaixia/wxshare/blob/master/img/001.jpg)
 
 ##### 案例思路
