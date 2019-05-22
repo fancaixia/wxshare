@@ -8,7 +8,7 @@
 > 3. 客户端  wx.showShareMenu  显示转发按钮  <br/><br/>
 > 4. 从服务端获取活动消息id （activityId）   <br/><br/>
 > 5. wx.updateShareMenu 更新转发动态消息属性  <br/><br/>
-> 6. onShareAppMessage 设置默认转发标题级背景 return {      <br/><br/>
+> 6. onShareAppMessage 设置默认转发标题和背景 return {      <br/><br/>
 >     title: `小游戏组团`, <br/>
 >      path: `/pages/live/index`,  <br/>
 >     imageUrl: this.data.shareImage   }
