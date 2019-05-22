@@ -2,6 +2,20 @@
 
 ![https://github.com/fancaixia/wxshare/blob/master/img/001.jpg](https://github.com/fancaixia/wxshare/blob/master/img/001.jpg)
 
+##### 案例思路
+> 1. 本案例小程序版本 2.7.0  <br/><br/>
+> 2. 服务端接口 createActivityId 创建被分享动态消息id （activity_id）  <br/><br/>
+> 3. 客户端  wx.showShareMenu  显示转发按钮  <br/><br/>
+> 4. 从服务端获取活动消息id （activityId）   <br/><br/>
+> 5. wx.updateShareMenu 更新转发动态消息属性  <br/><br/>
+> 6. onShareAppMessage 设置默认转发标题级背景 return {      <br/><br/>
+>     title: `小游戏组团`, <br/>
+>      path: `/pages/live/index`,  <br/>
+>     imageUrl: this.data.shareImage   }
+
+
+
+
 
 ##### 小程序端代码
 ```
@@ -65,7 +79,7 @@ onShareAppMessage: function () {
 
 ```
 
-##### node
+##### node代码
 ```
     // 获取登录凭证
     // 根据登录凭证获取活动消息 activity_id
@@ -127,6 +141,12 @@ onShareAppMessage: function () {
         });  
 
 ```
+
+#### 项目启动
+- wx-static / utils/utils.js  修改IP地址
+- wx-server / config.js   修改小程序appid和小程序密钥
+- cnpm  install
+- node app
 
 
 
