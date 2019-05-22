@@ -14,7 +14,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.7.0",
 	"appid": "wx62d1ecaf85eeba45",
-	"projectname": "wx-canvas-draw",
+	"projectname": "wx-share",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
