@@ -1,11 +1,11 @@
 {
   "pages": [
-    "pages/live/index"
+    "pages/share/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "wx-share",
     "navigationBarTextStyle": "black"
   }
 }

@@ -1,4 +1,6 @@
-let defaultip = 'http://你的ip地址:3000'
+
+let defaultip = '你的IP地址';
+
 const service = options => {
   wx.showNavigationBarLoading();
   options = {
