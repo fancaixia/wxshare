@@ -14,7 +14,7 @@
 >      path: `/pages/live/index`,  <br/>
 >     imageUrl: this.data.shareImage   }
 
-> 7. 如若显示用户信息
+> 7. 分享时如若显示用户信息
 >    用户授权
 >    授权成功后 canvas绘制分享海报 将图片存储在内存中
 >    用户点击分享 设置 imageUrl 为canvas 绘制图
