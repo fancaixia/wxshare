@@ -1,4 +1,4 @@
-### wxshare  微信小程序分享( 转发 )实例+可显示动态消息+canvas绘制海报
+### wxshare  微信小程序分享实例+可显示动态消息+canvas绘制分享海报
 
 [github地址：https://github.com/fancaixia/wxshare](https://github.com/fancaixia/wxshare)  <br/><br/>
 ![https://github.com/fancaixia/wxshare/blob/master/img/001.jpg](https://github.com/fancaixia/wxshare/blob/master/img/001.jpg)
