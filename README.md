@@ -2,6 +2,7 @@
 
 [github地址：https://github.com/fancaixia/wxshare](https://github.com/fancaixia/wxshare)  <br/><br/>
 ![https://github.com/fancaixia/wxshare/blob/master/img/001.jpg](https://github.com/fancaixia/wxshare/blob/master/img/001.jpg)
+![https://github.com/fancaixia/wxshare/blob/master/img/002.jpg](https://github.com/fancaixia/wxshare/blob/master/img/002.jpg)
 
 ##### 案例思路
 - 本案例小程序版本 2.7.0 
