@@ -8,18 +8,18 @@
 - 本案例小程序版本 2.7.0 
 - 案例演示需在真机运行
 - 本案例只演示如何使用，具体业务场景不考虑，用户首次授权后转发才可显示动态消息
-> 1. 客户端  wx.showShareMenu  显示转发按钮  
-> 2. 用户授权（授权后转发才可显示动态消息和用户信息）
->    授权成功后 canvas绘制分享海报 
-> 3. 服务端接口 createActivityId 创建被分享动态消息id （activity_id）
-> 4. 客户端从服务端获取活动消息id （activityId）
->    设置转发卡片动态消息 (wx.updateShareMenu)
->5. 服务端接口 setUpdatableMsg  修改被分享的动态消息
-  wx-server/routes/index.js  中 setTimeout 修改状态改变时间
-> 6. onShareAppMessage 设置默认转发标题和背景 return {    
->        title: `小游戏组团`,
->        path: `/pages/share/index`,  
->       imageUrl: this.data.shareImage     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //canvas 绘制分享海报路径 
+> 1. 客户端  wx.showShareMenu  显示转发按钮  <br/>
+> 2. 用户授权（授权后转发才可显示动态消息和用户信息）<br/>
+>    授权成功后 canvas绘制分享海报 <br/>
+> 3. 服务端接口 createActivityId 创建被分享动态消息id （activity_id）<br/>
+> 4. 客户端从服务端获取活动消息id （activityId）<br/>
+>    设置转发卡片动态消息 (wx.updateShareMenu)<br/>
+>5. 服务端接口 setUpdatableMsg  修改被分享的动态消息<br/>
+  wx-server/routes/index.js  中 setTimeout 修改状态改变时间<br/>
+> 6. onShareAppMessage 设置默认转发标题和背景 return {  <br/>  
+>        title: `小游戏组团`,<br/>
+>        path: `/pages/share/index`,  <br/>
+>       imageUrl: this.data.shareImage     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //canvas 绘制分享海报路径 <br/>
 >    }
 
 
