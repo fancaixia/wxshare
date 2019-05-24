@@ -24,7 +24,7 @@ Page({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
       })
-     
+    
     } else if (this.data.canIUse) {
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
@@ -47,42 +47,6 @@ Page({
         }
       })
     }
-
-    // 设置转发动态消息
-    utils.service({
-      url: `http://${utils.defaultip}:3000/share/creatid`,
-      data: {}
-    }).then((res) => {
-      // console.log(res, " :获取消息id成功")
-      let activity_id = res.activity_id;
-    
-      wx.updateShareMenu({
-        withShareTicket: true,
-        isUpdatableMessage: true,
-        activityId:activity_id, // 活动消息 ID
-        targetState: 0,
-        templateInfo: {
-          parameterList: [{
-            name: 'member_count',
-            value: '1'
-          }, {
-            name: 'room_limit',
-            value: '3'
-          }]
-        },
-        success: (res) => {
-          console.log('更新消息成功', res)
-        },
-        fail: (err) => {
-          console.log('更新消息失败', err)
-        }
-
-      });
-
-    }).catch((err) => {
-      console.log(err, " :获取消息id失败")
-    })
-
   },
 
   /**
@@ -98,6 +62,44 @@ Page({
     }
 
   },
+
+   // 设置转发动态消息
+   setShareMsg(){
+     utils.service({
+       url: `http://${utils.defaultip}:3000/share/creatid`,
+       data: {}
+     }).then((res) => {
+       // console.log(res, " :获取消息id成功")
+       let activity_id = res.activity_id;
+
+       wx.updateShareMenu({
+         withShareTicket: true,
+         isUpdatableMessage: true,
+         activityId: activity_id, // 活动消息 ID
+         targetState: 0,
+         templateInfo: {
+           parameterList: [{
+             name: 'member_count',
+             value: '1'
+           }, {
+             name: 'room_limit',
+             value: '3'
+           }]
+         },
+         success: (res) => {
+           // console.log('更新消息成功', res)
+         },
+         fail: (err) => {
+           // console.log('更新消息失败', err)
+         }
+
+       });
+
+     }).catch((err) => {
+       console.log(err, " :获取消息id失败")
+     })
+
+   },
 
   // 获取用户授权
   getUserInfo: function (e) {
@@ -115,7 +117,8 @@ Page({
             imageUrl: tempFilePath
           })
         })
-
+       // 设置转发动态消息
+      this.setShareMsg();
     }
     
   },
