@@ -16,7 +16,7 @@
 >    设置转发卡片动态消息 (wx.updateShareMenu)<br/>
 >5. 服务端接口 setUpdatableMsg  修改被分享的动态消息<br/>
   wx-server/routes/index.js  中 setTimeout 修改状态改变时间<br/>
-> 6. onShareAppMessage 设置默认转发标题和背景 return {  <br/>  
+> 6. onShareAppMessage 设置默认转发标题和背景 return {  
 >        title: `小游戏组团`,<br/>
 >        path: `/pages/share/index`,  <br/>
 >       imageUrl: this.data.shareImage     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //canvas 绘制分享海报路径 <br/>
